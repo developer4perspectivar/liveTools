@@ -1,0 +1,18 @@
+directories:
+  output: ./buileder
+  buildResources: build
+appId: com.coderjeet.dyliveelectron
+productName: Dyliveelectron
+files:
+  - filter:
+      - ./electron/**
+      - ./electron/**/**
+      - ./dist
+extraFiles:
+  - filter:
+      - ./videos
+      - ./cvideo
+publish:
+  - provider: generic
+    url: http://123.57.182.219:87
+electronVersion: 29.4.0
